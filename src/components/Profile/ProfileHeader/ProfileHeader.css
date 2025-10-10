@@ -1,0 +1,299 @@
+.profile-header {
+  position: relative;
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.profile-banner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.banner-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-content {
+  max-width: 1264px;
+  margin: 0 auto;
+  /* padding: 8px 16px; */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar-container {
+  position: relative;
+  flex-shrink: 0;
+  top: -50px;
+}
+
+.responsive-avatar {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.avatar-img {
+  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  inset: 0 !important;
+}
+
+.active-status {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+  border: 3px solid #52c41a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-img {
+  border-radius: 50%;
+}
+
+.active-status {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid #ffc54d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.profile-meta {
+  font-size: 16px;
+  color: #626060;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.verified-text {
+  font-size: 16px;
+  font-weight: 800;
+  color: #000;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.stats-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.stat-icon {
+  font-size: 16px;
+}
+
+.star {
+  color: #f59e0b;
+}
+
+.user {
+  color: #3b82f6;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.action-buttons-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.follow-btn {
+  background: #dc2626 !important;
+  border: none !important;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 1px 2px rgba(220, 38, 38, 0.3);
+  min-width: 150px;
+  padding: 20px 32px;
+}
+
+.follow-btn:hover {
+  background: #b91c1c !important;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d1d5db !important;
+  background: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  transition: all 0.2s ease;
+}
+
+.message-btn:hover {
+  color: #fff !important;
+  border-color: #b8141c !important;
+  background: #b8141c !important;
+}
+
+.call-btn:hover {
+  color: #fff !important;
+  border-color: #b8141c !important;
+  background: #b8141c !important;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    padding: 12px 16px;
+  }
+
+  .responsive-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .active-status {
+    width: 28px;
+    height: 28px;
+    bottom: 2px;
+    right: 2px;
+    border-width: 2px;
+  }
+
+  .profile-banner {
+    height: 100px;
+  }
+
+  .left-section {
+    gap: 12px;
+  }
+
+  .right-section {
+    gap: 12px;
+  }
+
+  .stats-row {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .follow-btn {
+    min-width: 80px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-banner {
+    height: 80px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+  }
+
+  .responsive-avatar {
+    width: 130px;
+    height: 130px;
+  }
+
+  .active-status {
+    width: 24px;
+    height: 24px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .stat-value {
+    font-size: 11px;
+  }
+
+  .follow-btn {
+    min-width: 100px;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .action-buttons-row {
+    gap: 6px;
+  }
+}
