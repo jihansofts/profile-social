@@ -1,0 +1,8 @@
+.profile-banner {
+  height: 200px;
+}
+
+.banner-image {
+  object-fit: cover;
+  object-position: center;
+}

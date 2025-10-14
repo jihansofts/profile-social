@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --primary: #d22831;
+  --heading: #121212;
+  --secondary: #333333;
+  --borderColor: #e0e0e0;
+}
+
+html,
+body {
+  font-family: var(--font-montserrat);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+.ant-typography,
+.ant-btn,
+.ant-input,
+.ant-select,
+.ant-tabs,
+.ant-card,
+.ant-table {
+  font-family: var(--font-montserrat) !important;
+}
+
+.custom-tabs .ant-tabs-nav::before {
+  border: none;
+}
+
+.custom-tabs .ant-tabs-tab {
+  /* padding: 1rem 0; */
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.custom-tabs .ant-tabs-tab:hover {
+  color: var(--primary);
+}
+
+.custom-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.custom-tabs .ant-tabs-ink-bar {
+  background: var(--primary);
+  margin-bottom: 12px;
+}

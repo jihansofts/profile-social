@@ -1,0 +1,14 @@
+.description-title {
+  font-size: 22px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.description-paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  border: 1px solid #62606030;
+  padding: 20px 16px;
+  border-radius: 10px;
+}
